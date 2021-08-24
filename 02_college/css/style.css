@@ -313,9 +313,6 @@ body {
     cursor: pointer;
     transition: 0.3s;
 }
-#section2 ul .tour .mask:hover {
-    background-color:rgba(0, 0, 0, 0);
-}
 #section2 ul .tour a {
     display: block;
     width: 100%; height: 100%;
@@ -369,5 +366,51 @@ body {
 #footer .footerWrap { 
     width:1200px; height:165px;
     margin:0 auto; 
-    background-color: gray;
 }
+#footer .footerWrap .logo { 
+    width:300px; height:165px;
+    float:left;
+    background: url(../images/logo.png) no-repeat center;
+}
+#footer .footerWrap .content { 
+    width:900px; height:165px;
+    float:left;
+    padding-top:30px;
+}
+#footer .footerWrap .content .utilMenu ul li { 
+    float:left;
+}
+#footer .footerWrap .content .utilMenu ul li a { 
+    display: block;
+    padding:10px 20px;
+    color:#444444;
+    font-size:14px;
+    position: relative;
+}
+#footer .footerWrap .content .utilMenu ul li a::after { 
+    content: "";
+    display:block;
+    width:1px; height: 10px;
+    background-color: black;
+    position: absolute; right:0; top:14px;
+}
+#footer .footerWrap .content .utilMenu ul li:first-child a {
+    padding-left:0;
+}
+
+#footer .footerWrap .content .utilMenu ul li:last-child a::after { 
+    content: "";
+    display:block;
+    width:1px; height: 10px;
+    background-color:white;
+    position: absolute; right:0; top:8px;
+}
+
+address {
+    color:#6b6b6b; font-size:12px; line-height:16px;
+    font-style: normal;
+    margin-bottom:6px;
+}
+.copyright {
+    color:#676767; font-size:13px;
+} 
