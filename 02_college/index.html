@@ -9,9 +9,23 @@
             <link rel="stylesheet" href="./css/jquery.bx.css">
             <link rel="stylesheet" href="./css/common.css">
             <link rel="stylesheet" href="./css/style.css">
+            <link rel="stylesheet" href="./css/colorbox.css">
 
             <script src="./js/jquery-3.1.1.min.js"></script>
             <script src="./js/jquery.bxslider.js"></script>
+            <script src="./js/jquery.colorbox-min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $(".vBxsliderWRap").bxSlider();
+                    $(".rBxsliderWRap").bxSlider();
+
+                    $(".youtube").colorbox({
+                        iframe:true,
+                        innerWidth:700,
+                        innerHeight:394
+                    })
+                });
+            </script>
 
         </head>
     <body>
@@ -226,13 +240,12 @@
                     </li>
                     
                     <li class="movie">
-                        <a href=""></a>
+                        <a href="https://www.youtube.com/embed/hsLP5SLsUY0" class="youtube"><img src="../02_college/images/playbutton.png" alt=""></a>
                     </li>
 
                     <li class="rBxslider">
                         <div class="rBxsliderWrap">
-                            <div><img src="../college/images/man.jpg" alt=""></div>
-                            <div><img src="../college/images/man.jpg" alt=""></div>
+                        
                         </div>
                     </li>
  
@@ -250,21 +263,32 @@
 <!-- NOTICE END -->
 
 <!-- FOOTER START -->
-            <footer id="footer">
-                <div class="footerWrap">
-
-                </div>
-            </footer>
+<footer id="footer">
+    <div class="footerWrap clearfix">
+        <div class="logo"></div>
+        <div class="content">
+            <div class="utilMenu">
+                <ul class="clearfix">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">한국대학교</a></li>
+                    <li><a href="#">개인정보취금방침</a></li>
+                    <li><a href="#">이용정책 </a></li>
+                    <li><a href="#">입점/제휴문의 및 광고</a></li>
+                    <li><a href="#">이메일 무단 수집거부</a></li>
+                </ul>
+            </div>
+            <address>
+                대표자 : 홍길동 &nbsp;&nbsp;&nbsp;서울특별시 구로구 구로로 300(구로동 6가)&nbsp;&nbsp;&nbsp;사업자등록번호 : 123-56-9890234<br>
+                통신판매업 신고번호 : 제 1234-서울 구로구-1004호&nbsp;&nbsp;&nbsp;개인정보관리 책임자 : 홍길동&nbsp;&nbsp;&nbsp;소비자피해보상보험<br>
+                고객센터 : 1234-5678&nbsp;&nbsp;&nbsp;FAX : 02-1234-5678&nbsp;&nbsp;&nbsp;HANGUKUNIVERSITY@HANGUK.COM
+            </address>
+            <p class="copyright">
+                COPYRIGHT  (C) HANGUL.ALL RIGHTS REDSERVED.
+            </p>
+        </div>
+    </div>
+</footer>
 <!-- FOOTER END -->
         </div>
-
-
-        <script>
-            $(document).ready(function(){
-                $(".vBxsliderWRap").bxSlider();
-                $(".rBxsliderWRap").bxSlider();
-            })
-        </script>
-
     </body>
 </html>
