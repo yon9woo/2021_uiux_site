@@ -65,9 +65,9 @@ body {
     width:1200px; height:260px;
     margin:0 auto;
 }
-.section1 .leftSentenceWrap {
+.section1 .leftWrap {
     float:left;
-    padding-top:80px; padding-bottom:50px;
+    padding: 80px 0 50px 0;
 }
 .section1 .rightIconWrap {
     float:right;
@@ -85,9 +85,6 @@ body {
     display: block;
     margin-bottom:10px;
 }
-.section1 .rightIconWrap ul li a p {
-    text-shadow: 1px 1px 1px gray;
-}
 
 /* section2  */
 #section2 {
@@ -102,12 +99,7 @@ body {
 
 
 /* vBxslider  */
-#section2 ul li.vBxslider {
-    width:75%; height:450px;
-    /* background-color:deeppink; */
-    /* position: relative; */
-    overflow: hidden;
-}
+#section2 ul li.vBxslider { width:900px; height:450px;}
 #section2 ul li.vBxslider .vBxsliderWRap div { width:900px; height: 450px; }
 #section2 ul li.vBxslider .vBxsliderWRap .slideImg1 { background-image:url(../images/girl_bg.jpg); }
 #section2 ul li.vBxslider .vBxsliderWRap .slideImg2 { background-image:url(../images/girl_bg.jpg); }
@@ -159,8 +151,8 @@ body {
 }
 #section2 ul li.hotlink .hotlinkWrap .title {
     font-family:'Roboto', sans-serif;
-    color:white; font-size:22px;
-    margin-bottom:28px;
+    color:white; font-size:24px;
+    margin-bottom:30px;
 }
 #section2 ul li.hotlink .hotlinkWrap .hotlinkIcon {
     width:220px; height:100%;
