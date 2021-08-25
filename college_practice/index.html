@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>::한국대학교::</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/jquery.bxslider.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/colorbox.css">
+    
 
     <script src="./js/jquery-3.1.1.min.js"></script>
     <script src="./js/jquery.bxslider.js"></script>
@@ -20,137 +21,218 @@
 
     <script>
         $(document).ready(function(){
-            $(".slider1").bxSlider();
-            $(".slider2").bxSlider();
-        })
+            var myslide1 = $('.slider1').bxSlider({controls:false});
+            $('.nextBtn').click(function(){myslide1.goToNextSlide();});
+            $('.prevBtn').click(function(){myslide1.goToPrevSlide();});
+
+            $('.slider2').bxSlider({controls:false});
+            
+            var myslide2 = $('.slider3').bxSlider({pager:false,controls:false,mode:'vertical'});
+            $('.nextBtn2').click(function(){myslide2.goToNextSlide();});
+            $('.prevBtn2').click(function(){myslide2.goToPrevSlide();});
+
+            $('.youtube').colorbox({
+                iframe:true,
+                innerWidth:700,
+                innerHeight:393.75
+            });
+        });
     </script>
 
-  
 </head>
 <body>
-    <header id="header">
-        <div class="util_menu_wrap"> 
-            <div class="util_menu clearfix">
-                <ul class="left clearfix">
+    <!-- header start -->
+    <div id="headerWrap">
+        <div class="topWrap">
+            <div class="top clearfix">
+                <ul class="selctBtn clearfix">
                     <li><a href="#" class="active">대학교</a></li>
                     <li><a href="#">입학안내</a></li>
                     <li><a href="#">대학원</a></li>
                 </ul>
-                <ul class="right clearfix">
+                <ul class="util clearfix">
                     <li><a href="#">글자크기</a></li>
-                    <li class="add clearfix"><a href="#">+</a><a href="#">-</a></li>
+                    <li>
+                        <a href="#">+</a>
+                        <a href="#">-</a>
+                    </li>
                     <li><a href="#">찾아오시는길</a></li>
                     <li><a href="#">ENGLISH</a></li>
                     <li><a href="#">사이트맵</a></li>
                 </ul>
             </div>
-
         </div>
-        <div class="main_menu_wrap"></div>
-    </header>
-    <div class="contents">
-        <section class="title"></section>
-        <div class="container">
+        <div class="nav clearfix">
+            <div class="logo">
+                <a href="#"><img src="./images/logo.png" alt="logo01"></a>
+            </div>
+            <div class="gnb">
+                <ul class="clearfix">
+                    <li><a href="#">대학소개</a></li>
+                    <li><a href="#">학과소개</a></li>
+                    <li><a href="#">학사안내</a></li>
+                    <li><a href="#">대학생활</a></li>
+                    <li><a href="#">학생지원센터</a></li>
+                </ul>
+                <div class="toggle"></div>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- content start -->
+    <div id="contentWrap">
+        <div class="content1 clearfix">
+            <div class="txt" style="font-size: 50px;">함께 나누며 세상을 이끌어<br><span style="font-size: 72px; font-weight: bold;">세계로 향하는 한국대학교</span></div>
             <ul class="clearfix">
                 <li>
-                    <ul class="slider1">
-                        <li>
-                            <img src="./images/girl_bg.jpg" alt="">
-                            <div class="txt">
-                                <p>
-                                    <b>한국</b>에서<br>
-                                    <b>시작</b>하는<br>
-                                    새로운<b>꿈</b><br>
-                                </p>
-                                <a href="#">자세히보기</a>
-                            </div>
-                        
-                        </li>
-                        <li>
-                            <img src="./images/girl_bg.jpg" alt="">
-                            <div class="txt">
-                                <p>
-                                    <b>한국</b>에서<br>
-                                    <b>시작</b>하는<br>
-                                    새로운<b>꿈</b><br>
-                                </p>
-                                <a href="#">자세히보기</a>
-                            </div>
-                        
-                        </li>
-                        <li>
-                            <img src="./images/girl_bg.jpg" alt="">
-                            <div class="txt">
-                                <p>
-                                    <b>한국</b>에서<br>
-                                    <b>시작</b>하는<br>
-                                    새로운<b>꿈</b><br>
-                                </p>
-                                <a href="#">자세히보기</a>
-                            </div>
-                        
-                        </li>
-                    </ul>
+                    <a href="#"><img src="./images/icon_01.png" alt="icon01"></a>
+                    <a href="#">입학절차안내</a>
                 </li>
-                <li>2</li>
-                <li>3</li>
                 <li>
-                    <div class="conWrap">
-                        <h2>SNS NEWS</h2>
+                    <a href="#"><img src="./images/icon_02.png" alt="icon02"></a>
+                    <a href="#">입학설명회</a>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/icon_03.png" alt="icon03"></a>
+                    <a href="#">장학제도</a>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/icon_04.png" alt="icon04"></a>
+                    <a href="#">증명서발급</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content2">
+            <ul class="clearfix">
+                <ul class="slider1">
+                    <div class="txt">
+                        <h3><a href="#">공지사항</a></h3>
                         <div class="notice">
                             <ul>
+                                <li><a href="#"><p>&middot; [공지] 한국대학교 웹진...<span>2016-06-12</span></p></a>
                                 <li>
-                                    <a href="javascript:void(0)">
-                                        <p>test <span>2021.11.10</span></p>
-                                    </a>
-                                </li>
+                                <li><a href="#"><p>&middot; [보도] 우수대학교 선정 수상<span>2016-06-17</span></p></a>
                                 <li>
-                                    <a href="#">
-                                        <p>test <span>2021.11.10</span></p>
-                                    </a>
-                                </li>
+                                <li><a href="#"><p> &middot; [공지] 대학입시 설명회<span>2016-06-05</span></p></a>
                                 <li>
-                                    <p>test <span>2021.11.10</span></p>
-                                </li>
+                                <li><a href="#"><p> &middot; [공지] 2016년 1학기 성적...<span>2016-05-14</span></p></a>
                                 <li>
-                                    <p>test <span>2021.11.10</span></p>
-                                </li>
                             </ul>
+                        </div>
+                    </div>
+                </ul>
+            </ul>    
+        </div>
+                <li>
+                    <div class="snsNews">
+                        <h3>SNS NEWS</h3>
+                        <img src="./images/school1.png" alt="학교01">
+                        <p>한국 대학교는<br>2017학년도 신입생<br>입학식을 3월 2일(목)<br>본교 종합체육관 ...</p>
+                    </div>
+                    <div class="sns">
+                        <ul class="clearfix">
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>    
+                </li>
+                <li>
+                    <div class="overlay">
+                        <div class="txt">
+                            <h3>캠퍼스 투어</h3>
+                            <br>
+                            <p>Lorem, ipsum dolor.</p>
                         </div> 
                     </div>
                 </li>
                 <li>
-                    <div class="conWrap">
-                        <h2>SNS NEWS</h2>
-                        <div class="news clearfix">
-                            <img src="images/news.png" alt="">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, laborum.
-                        </div>
-                        <div class="sns">
-                            <ul class="clearfix">
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
-                                <li>4</li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li>6</li>
-                <li>
-                    <div class="box">>>></div>
+                    <a href="https://www.youtube.com" class="youtube"><img src="./images/playbutton.png" alt=""></a>
                 </li>
                 <li>
                     <ul class="slider2">
-                        <li><img src="images/banner01_01.png" alt=""></li>
-                        <li><img src="images/banner01_02.png" alt=""></li>
+                        <li>
+                            <img src="./images/man.jpg" alt="banner01">
+                            <div class="txt">
+                                <h3>2017년 신&middot;편입생2차모집</h3>
+                                <h1>2017.7.1 ~ 7.10</h1>
+                                <a href="#">입학사전예약 ▶</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/banner02.jpg" alt="">
+                            <div class="txt">
+                                <h3>2017년 신&middot;편입생2차모집</h3>
+                                <h1>2017.7.1 ~ 7.10</h1>
+                                <a href="#">입학사전예약 ▶</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/banner03.jpg" alt="">
+                            <div class="txt">
+                                <h3>2017년 신&middot;편입생2차모집</h3>
+                                <h1>2017.7.1 ~ 7.10</h1>
+                                <a href="#">입학사전예약 ▶</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/banner04.jpg" alt="">
+                            <div class="txt">
+                                <h3>2017년 신&middot;편입생2차모집</h3>
+                                <h1>2017.7.1 ~ 7.10</h1>
+                                <a href="#">입학사전예약 ▶</a>
+                            </div>
+                        </li>
                     </ul>
                 </li>
             </ul>
         </div>
+        <div class="content3 clearfix">
+            <div class="txt">
+                <h3><a href="#">학사일정</a></h3>
+                <p><a href="#">&lt; 2016 06 &gt;</a></p>
+            </div>
+            <div class="slide">
+                <h3>2016-1학기 성적 열람 및 상담 신청</h3>
+                <ul class="slider3">
+                    <li>성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</li>
+                    <li>2성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</li>
+                    <li>3성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</li>
+                    <li>4성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</li>
+                </ul>
+                <div class="prevBtn2"><img src="images/btn_up.png" alt="btn_up"></div>
+                <div class="nextBtn2"><img src="images/btn_down.png" alt="btn_down"></div>
+            </div>
+        </div>
+    </div>    
+    <!-- content end -->
 
+    <!-- footer start -->
+    <div id="footer">
+        <div class="footerWrap clearfix">
+            <div class="logo">
+                <a href="#"><img src="images/logo02.png" alt="logo02"></a>
+            </div>
+            <div class="footer">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">한국대학교</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용정책</a></li>
+                    <li><a href="#">입점/제휴문의 및 광고</a></li>
+                    <li><a href="#">이메일 무단수집거부</a></li>
+                </ul>
+                <div class="address">
+                    대표자:홍길동 서울특별시 구로구 구로로 300 (구로동 6가)  사업자등록번호:123-56-7890234 <br>
+                    통신판매업 신고번호:제 1234-서울 구로구-1004호 개인정보관리 책임자:홍길동 소비자피해보상보험 <br>
+                    고객센터:1234-5678 FAX:02-1234-5678 HANGUKUNIVERSITY @HANGUK.com
+                </div>
+                <h3>COPYRIGHT&copy;HANGUK.ALL RIGHT RESERVED.</h3>
+            </div>
+        </div>
     </div>
-    
-    
+    <!-- footer end -->
 </body>
 </html>
