@@ -1,22 +1,22 @@
 @charset "UTF-8";
 
-.Text72, .Text50 {
+.bigText72, .bigText50 {
     font-family:'Noto Sans KR', sans-serif;
     color:white;
 }
 
-.Text72 {    
+.bigText72 {    
     font-size:72px; 
     font-weight: bold;
     letter-spacing:-2.6px;  
 }
 
-.Text50 {
+.bigText50 {
     font-size:50px; 
     font-weight:100;
     letter-spacing:-5px;
 }
-.text14 {
+.p14 {
     font-family:'Roboto', sans-serif;
     color:white;
     font-size:14px;
@@ -25,7 +25,7 @@
     line-height:20px; 
     letter-spacing:-0.2px;
 }
-.roboto {
+.roboto72 {
     font-family:'Roboto', sans-serif;
     font-size:65px;
     color:#1553B8;
@@ -42,6 +42,11 @@
     letter-spacing:-3px;
     line-height:50px;
 }
+
+
+
+
+
 
 
 .bx-wrapper {

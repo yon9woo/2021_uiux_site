@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+
+
+@media screen and (min-width:700px) {
+    #header{background-color: rgba(255,212,74,0.5);}
+    .headerWrap{width: 1280px;height: 76px;line-height: 76px;margin: 0 auto;}
+    .logoWrap{float: left;width: 165px;}
+    .logoWrap h1{float: left;display: block;font-size:20px;}
+    .navWrap li{float: right;width: 170px;}
+    .navWrap a{float: left;}
+    .sliderWrap{width: 100%;position: relative;}
+
+
+    #header .overlay{
+        width: 100%;height: 76px;line-height: 76px;margin: 0 auto;background: rgba(173,164,29,0.4);
+        position: absolute;
+        top: 0;left: 0;
+        opacity: 0;
+    }
+    #header:hover .overlay{
+        transition:0.3s;top: 0;right: 0;opacity: 1;
+    }
+    .logoWrap2{float: left;width: 165px;}
+    .logoWrap2 h1{float: left;display: block;font-size:20px;}
+    .logoWrap2 a{color:white;}
+    .navWrap2 li{float: right;width: 170px;}
+    .navWrap2 a{float: left;color:white;}
+
+    .nextBtn,.prevBtn{position: absolute;top: 50%;margin-top: -8%;cursor: pointer;}
+    .nextBtn{right: 0;}
+    .prveBtn{left: 0;}
+
+    /* sec1st  */
+    .sec1stWrap{width: 1280px;margin: 0 auto;background: pink;margin-bottom: 180px;}
+}
