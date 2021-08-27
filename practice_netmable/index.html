@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/jquery.bx.css">
+
+    <!-- script  -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <script>
+        $(document).ready(function(){
+           var myslide = $("ul.slide").bxSlider({pager:false,});
+            $('.nextBtn').click(function(){
+                myslide.goToNextSlide();});
+
+            $('.prevBtn').click(function(){
+                myslide.goToPrevSlide();});
+
+        });
+    </script>
+
+    <style>
+    @media screen and (min-width:700px) {
+    #header{background-color:white;}
+    .headerWrap{width: 1280px;height: 76px;line-height: 76px;margin: 0 auto;}
+    .logoWrap{float: left;width: 165px;}
+    .logoWrap h1{float: left;display: block;font-size:20px;}
+    .navWrap li{float: right;width: 170px;}
+    .navWrap a{float: left;}
+    .sliderWrap{
+        width: 100%;position: relative;
+        z-index: 2;
+    }
+
+    .bx-wrapper {
+        -moz-box-shadow: 0 none;
+        -webkit-box-shadow: 0 none;
+        box-shadow: 0 none;
+        border: 0 none;
+        margin-bottom: 0;
+    }
+
+
+    #header .overlay{
+        width: 100%;height: 76px;line-height: 76px;margin: 0 auto;
+        position: absolute;
+        top: 0;left: 0;
+        opacity: 0;
+    }
+    #header:hover .overlay{
+        transition:0.3s;top: 0;right: 0;opacity: 1;
+    }
+    .logoWrap2{float: left;width: 165px;}
+    .logoWrap2 h1{float: left;display: block;font-size:20px;}
+    .logoWrap2 a{color:black;}
+    .navWrap2 li{float: right;width: 170px;}
+    .navWrap2 a{float: left;color:black;}
+
+    .nextBtn,.prevBtn{position: absolute;top: 50%;margin-top: -8%;cursor: pointer;}
+    .nextBtn{right: 0;}
+    .prveBtn{left: 0;}
+
+    /* sec1st  */
+    .sec1stWrap{width: 1280px;margin: 0 auto;background: pink;margin-top: 180px;}
+    .sec1st{position: relative;}
+    .sec1st h1{float: left;font-size: 44px;position: absolute;left: 0;}
+    .sec1st p{float: right;position: absolute;right: 0;}
+}
+
+    </style>
+</head>
+<body>
+    <!-- header start -->
+    <div id="header">
+        <div class="headerWrap">
+            <div class="logoWrap clearfix">
+                <h1><a href="#">넷마블문화재단</a></h1>
+            </div>
+            <div class="navWrap">
+                <ul class="clearfix">
+                    <li><a href="#">재단소개</a></li>
+                    <li><a href="#">재단활동</a></li>
+                    <li><a href="#">재단소식</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="overlay">
+            <div class=headerWrap>
+                <div class="logoWrap2 clearfix">
+                    <h1><a href="#">넷마블문화재단</a></h1>
+                </div>
+                <div class="navWrap2">
+                    <ul class="clearfix">
+                        <li><a href="#">재단소개</a></li>
+                        <li><a href="#">재단활동</a></li>
+                        <li><a href="#">재단소식</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="sliderWrap">
+        <ul class="slide">
+            <li><img src="./images/main1.jpg" alt="img1"></li>
+            <li><img src="./images/main2.jpg" alt="img2"></li>
+            <li><img src="./images/main3.jpg" alt="img3"></li>
+            <li><img src="./images/main4.jpg" alt="img4"></li>
+            <li><img src="./images/main5.jpg" alt="img5"></li>
+        </ul>
+        <div class="nextBtn">
+            <img src="./images/button_R.png" alt="nextBtn">
+        </div>
+        <div class="prevBtn">
+            <img src="./images/button_L.png" alt="prevBtn">
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- section start -->
+    <section class="content">
+        <div class="sec1stWrap">
+            <div class="sec1st clearfix">
+                <h1>문화를 만들고 인재를 키우고 <br>마음을 나눕니다</h1>
+                <p>넷마블문화재단은 문화적 가치 확산을 통해 우리 사회의 미래 경쟁력을 높여 가고자 <br>다양한 공익 활동을 전개해 나가고 있습니다.</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- section end -->
+
+
+</body>
+</html>
