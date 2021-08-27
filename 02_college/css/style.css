@@ -309,35 +309,35 @@ body {
     width:75%;
     background-image: url(../images/man.jpg);
 }
-/* bBxSlider 영역 */
-#bBxSlider {
+
+/* notcie 영역 */
+#nBxSlider {
     width:1200px; height:60px;
     background-color:white; 
     margin:0 auto; margin-bottom:70px;
 }
-#bBxSlider div {
-}
-#bBxSlider .cal {
+#nBxSlider div { float:left; }
+#nBxSlider .te {
     width:300px; height: 60px;
     border-right:2px solid lightgrey;
     float:left;
 }
-#nBxSlider .cal .title {
+#nBxSlider .te .title {
     width: 50%; height: 60px;
     text-align: center; line-height:60px;
 }
-#nBxSlider .cal .date {
+#nBxSlider .te .date {
     width: 50%; height:60px;
     text-align: center; line-height:60px;
 }
-#nBxSlider .cal .date span {
+#nBxSlider .te .date span {
     display:inline-block; width: 15px; height: 15px;
 }
-#nBxSlider .cal .date .prevBtn {
+#nBxSlider .te .date .prevBtn {
     background:url(../images/prev_button.jpg) no-repeat center;
     margin-right:10px;
 }
-#nBxSlider .cal .date .nextBtn {
+#nBxSlider .te .date .nextBtn {
     background:url(../images/next_button.jpg) no-repeat center;
     margin-left:10px;
 }
@@ -345,7 +345,7 @@ body {
 #nBxSlider .slide {
     width: 900px; height: 60px;
 }
-#nBxSlider .slide .slideWrap .slide_01 {
+#nBxSlider .slide .slideWrap .slide_1 {
     width: 900px; height: 60px;
 }
 #nBxSlider .slide .slideWrap div a {
@@ -367,23 +367,6 @@ body {
     font-size:14px;
     overflow: hidden;
 }
-
-/* bBxSlider 영역 */
-#bBxSlider {
-    width:1200px; height:60px;
-    background-color:white; 
-    margin:0 auto; margin-bottom:70px;
-}
-#bBxSlider div {
-}
-#bBxSlider .cal {
-    width:300px; height: 60px;
-    border-right:2px solid lightgrey;
-}
-#bBxSlider .info {
-    width: 900px; height: 60px;
-}
-
 /* footer 영역 */
 #footer {
     background-color: white;
