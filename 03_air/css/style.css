@@ -47,8 +47,11 @@ height: 90px;
 	width: 140px;
 	font-size:12px;
 }
-#header div.top div.search fieldset label{width: 60px; height: 18px; display: inline-block;
- padding-top: 5px; }
+#header div.top div.search fieldset label{
+	width: 60px; height: 18px; 
+	display: inline-block;
+ 	padding-top: 5px; 
+}
 
 #header div.top div.search>ul li{
 	float: left;
@@ -56,7 +59,7 @@ height: 90px;
 #header div.top div.search ul li:first-child{
 	margin-right: 10px;
 }
-#header div.top div.search ul li img.sericon{
+#header div.top div.search ul li img.serchicon{
 	position: absolute; top: 5px; right: 30px;
 }
 
