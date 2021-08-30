@@ -39,25 +39,24 @@ height: 90px;
 	position: absolute; top: 0px;
 	border: 0 solid #000;
 }
-#header div.top>div.search fieldset legend{
+#header div.top div.search fieldset legend{
 	position: absolute; top: -9999px; left: 0;
 }
-#header div.top>div.search fieldset input{
+#header div.top div.search fieldset input{
 	line-height: 18px; border: 0px none;
 	width: 140px;
 	font-size:12px;
 }
-#header div.top>div.search fieldset label{width: 60px; height: 18px; display: inline-block;
+#header div.top div.search fieldset label{width: 60px; height: 18px; display: inline-block;
  padding-top: 5px; }
 
-#header div.top>div.search>ul li{
+#header div.top div.search>ul li{
 	float: left;
 }
 #header div.top div.search ul li:first-child{
 	margin-right: 10px;
 }
-#header div.top div.search ul li img.sicon{
-	
+#header div.top div.search ul li img.snsicon{
 	position: absolute; top: 5px; right: 30px;
 }
 
@@ -93,13 +92,221 @@ height: 90px;
 	float: left;
 	border-right: 1px solid #e5e5e5;
 }
-.nav .gnb ul>li:first-child{
+.nav .gnb ul li:first-child{
 	border-left: 1px solid #e5e5e5;
 }
-.nav .gnb ul>li>img{
+.nav .gnb ul li img{
 	position: absolute; top: 30%; right: 360px;
 }
 .nav .gnb ul li:hover{
-    background: burlywood;
+    background: #4D8CE0;
 }
 /*header end*/
+
+/* section start */
+section{overflow: hidden;}
+#section_wrap{
+	width: 980px; margin: 0px auto; _height: 1236px;
+	_background-color: #c4c2; padding-top: 56px;
+}
+.section_bg{
+	height: 1236px;
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.section_bg .balloon_wrap{
+	position: absolute;
+	top: 200px; right: 300px;
+	animation-name:bgani;
+	animation-duration:3s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+}
+@keyframes bgani{
+			from{_top: 100px; }
+			to{_top: 40px;_right: 0px;}
+		}
+
+.section_bg .text_wrap{
+	position: absolute;
+	top: 30px; right: 25%;
+	width: 330px;
+	color:#152630;
+}
+.section_bg .text_wrap h2{
+	font-size: 60px;
+	font-weight: bold;
+	padding: 30px 0;
+	float: left;
+}
+.section_bg .text_wrap h2:after{
+	content:"";
+	display: block;
+	float: right;
+	width: 80px; height: 5px;
+	background-color: #152630;
+}
+.section_bg .text_wrap p{
+	font-size: 24px;
+}
+#section_wrap .section_wrap_top{
+	width: 100%; height: 556px;
+}
+#section_wrap .section_wrap_top .div{float: left;}
+#section_wrap .section_wrap_top .top_wrap1{
+	width: 482px; height: 100%;
+	margin-right: 16px;
+}
+#section_wrap .container_wrap1{
+	width: 100%; height: 300px; background-color: #fff;
+	margin-bottom: 16px;
+}
+#section_wrap .container_wrap1 .pagerWrap{
+	width: 132px; float: left;
+}
+#section_wrap .container_wrap1 .pagerWrap div.pager a{
+	width: 132px;
+	height: 75px;
+	background-color: #006599;
+	border-bottom: 1px solid #0087bf;
+	padding-top: 25px;
+	padding-left: 15px;
+	display: block;
+	color:white;
+}
+#section_wrap .container_wrap1 .pagerWrap div.pager a:last-child{border-bottom:none;}
+#section_wrap .container_wrap1 .pagerWrap div.pager a.active{
+	background-color: #fff;
+	color:#000;
+}
+
+#section_wrap .container_wrap1 .pagerWrap div.pager a div{
+	width: 100px; height: 30px;
+	position: relative;
+}
+#section_wrap .container_wrap1 span{
+	position: absolute; top: 0; right: 10px;
+	line-height:30px;
+}
+#section_wrap .container_wrap1 .pagerWrap div.pager a div .icon{
+	background-image: url(../images/Frame\ 46.png);
+	background-repeat:no-repeat;
+	width: 30px; height: 30px;
+	text-indent:-9999px;
+}
+#section_wrap .container_wrap1 .pagerWrap div.pager a.active div .icon{
+	background-image: url(../images/Frame\ 47.png);
+	background-repeat:no-repeat;
+	width: 30px; height: 30px;
+	text-indent:-9999px;
+}
+#section_wrap .container_wrap1 .pagerWrap div.pager a div .icon.one{
+	background-position: 0 0;
+}
+#section_wrap .container_wrap1 .pagerWrap div.pager a div .icon.two{
+	background-position: 0 -30px;
+}
+#section_wrap .container_wrap1 .pagerWrap div.pager a div .icon.three{
+	background-position: 0 -60px;
+}
+#section_wrap .container_wrap1 .pagerWrap div.pager a div .icon.four{
+	background-position: 0 -90px;
+}
+/*slider start*/
+#section_wrap .container_wrap1 .sliderWrap{
+	width: 350px; height: 300px; float: right;
+}
+
+.bx-wrapper {
+    -moz-box-shadow: 0 none;
+    -webkit-box-shadow:  0 none;
+    box-shadow:  0 none;
+    border:  0 none;
+}
+
+#section_wrap .sliderWrap> .slider{width: 482px; height: 300px;}
+#section_wrap .sliderWrap> .slider>li{
+	width: 482px; height: 300px;
+}
+#section_wrap .sliderWrap> .slider>li>form{
+	width: 350px; height: 300px; background-color: #c4c2;
+}
+#section_wrap fieldset legend{
+	display: block; right: 0; top: -9999px; position: absolute;
+}
+#section_wrap fieldset{
+	border: none;
+	width: 100%; height: 100%;
+	padding: 10px 30px;
+}
+#section_wrap fieldset label{display: block; padding-bottom: 5px; }
+#section_wrap fieldset select{
+	width: 100%; height: 30px;
+	border: 2px solid #ededed;
+	border-radius: 5px;
+}
+#section_wrap fieldset li{padding-top: 10px;}
+#section_wrap fieldset li>div{float: left;}
+#section_wrap fieldset li:nth-child(2) div>input{
+	border: 2px solid #ededed;
+	border-radius: 5px;
+	width: 130px;
+	height: 30px;
+}
+#section_wrap fieldset li:nth-child(2) div:first-child{
+	margin-right: 30px;
+}
+#section_wrap fieldset li:nth-child(3) div:first-child{
+	margin-right: 15px; width: 120px;
+}
+#section_wrap fieldset li:nth-child(3) div:nth-child(2){
+	margin-right: 15px;
+}
+#section_wrap fieldset li:nth-child(3) div:nth-child(2),
+#section_wrap fieldset li:nth-child(3) div:last-child{
+	width: 70px;
+}
+form>.btnArea{padding: 0 30px;}
+form>.btnArea>input{
+	width: 100%; height: 35px;
+	background-color: #ea4f1f;
+	color:#fff;
+	border: 0px solid #eee;
+	border-radius: 5px;
+	margin: 15px 0 23px 0;
+}
+
+#section_wrap .container_wrap2{
+	width: 100%; height: 240px; background-color: #fff;
+}
+#section_wrap .container_wrap2 ul li{
+	width: 233px;
+	height: 240px;
+	float: left;
+	margin-right: 16px;
+	position: relative;
+}
+#section_wrap .container_wrap2 ul li:last-child{margin-right: 0;}
+#section_wrap .container_wrap2 ul li img{display: block;}
+#section_wrap .container_wrap2 .text_wrap{
+	width: 100%; height: 50px; background-color: #152630;
+	position: absolute; bottom: 0; left: 0;
+	padding: 10px 20px;
+}
+#section_wrap .container_wrap2 ul li>.text_wrap>p{
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	margin-right: 30px;
+	color:#fff;
+}
+#section_wrap .container_wrap2 ul li>.text_wrap>p:last-child{
+	color: #71c565;
+	margin-right: 0;
+}
+#section_wrap .section_wrap_top .top_wrap02{
+	width: 482px; height: 100%;
+}
