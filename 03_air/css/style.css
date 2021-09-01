@@ -105,51 +105,56 @@ height: 90px;
 
 /*header끝*/
 /*section시작*/
-section{overflow: hidden;}
-#section_wrap{
-	width: 980px; margin: 0px auto; _height: 1236px;
-	padding-top: 56px;
-}
-.section_bg{
+section{
 	height: 1236px;
+	overflow: hidden;
 	background-image: url(../images/background.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	position: relative;
+
 }
-.section_bg .balloon_wrap{
+#section_wrap{
+	width: 980px; margin: 0px auto; _height: 1236px;
+	padding-top: 56px;
+}
+.top_wrap02{
+	height: 1236px;
+	position: relative;
+}
+.container_wrap03 .balloon_wrap{
 	position: absolute;
-	top: 200px; right: 300px;
+	top: 170px; right: -270px;
 	animation-name:bgani;
 	animation-duration:1s;
 	animation-iteration-count:infinite;
 	animation-direction:alternate;
 }
-@keyframes bgani{
-			from{_top: 100px; }
-			to{_top: 30px;}
-		}
+/* @keyframes bgani{
+			from{top: 100px; }
+			to{bottom: 30px;}
+		} */
 
-.section_bg>.text_wrap{
+.container_wrap03>.text_wrap{
 	position: absolute;
-	top: 100px; right: 25%;
+	top: 0px; right: 80px;
 	width: 370px;
 	color:#152630;
 }
-.section_bg>.text_wrap h2{
+.container_wrap03>.text_wrap h2{
 	font-size: 70px;
 	padding: 15px 0;
 	font-weight: bold;
 }
-.section_bg>.text_wrap h2:after{
+.container_wrap03>.text_wrap h2:after{
 	content:"";
 	display: block;
 	float: right;
 	width: 100px; height: 5px;
 	background-color: #152630;
 }
-.section_bg>.text_wrap p{
+.container_wrap03>.text_wrap p{
 	font-size: 30px
 }
 #section_wrap .section_wrap_top{
@@ -162,6 +167,10 @@ section{overflow: hidden;}
 }
 #section_wrap .container_wrap01{
 	width: 100%; height: 300px; background-color: #fff;
+	margin-bottom: 16px;
+}
+#section_wrap .container_wrap03{
+	width: 100%; height: 580px; _background-color: yellowgreen;
 	margin-bottom: 16px;
 }
 #section_wrap .container_wrap01>.pagerWrap{
