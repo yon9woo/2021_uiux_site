@@ -416,7 +416,7 @@ form>.btnArea>input{
 	transition:.3s;
 }
 #section_wrap .section_wrap_bottom>ul>li:nth-child(5):hover .plus{
-	transform:rotate(360deg) scale(1.2);
+	transform:rotate(180deg) scale(1.2);
 }
 .section_wrap_bottom>ul>li:nth-child(5)>.bg{
 	width: 233px; height: 240px;
@@ -466,7 +466,7 @@ form>.btnArea>input{
 	transition:.5s;
 }
 #section_wrap .section_wrap_bottom>ul>li:nth-child(6):hover .plus{
-	transform:rotate(360deg) scale(1.2);
+	transform:rotate(180deg) scale(1.2);
 }
 .section_wrap_bottom>ul>li:nth-child(6)>.bg{
 	width: 233px; height: 240px;
@@ -516,7 +516,7 @@ form>.btnArea>input{
 	transition:.3s;
 }
 #section_wrap .section_wrap_bottom>ul>li:nth-child(7):hover .plus{
-	transform:rotate(360deg) scale(1.2);
+	transform:rotate(180deg) scale(1.2);
 }
 .section_wrap_bottom>ul>li:nth-child(7)>.bg{
 	width: 233px; height: 240px;
@@ -566,7 +566,7 @@ form>.btnArea>input{
 	transition:.3s;
 }
 #section_wrap .section_wrap_bottom>ul>li:nth-child(8):hover .plus{
-	transform:rotate(360deg) scale(1.2);
+	transform:rotate(180deg) scale(1.2);
 }
 
 .section_wrap_bottom>ul>li:nth-child(8)>.bg{
