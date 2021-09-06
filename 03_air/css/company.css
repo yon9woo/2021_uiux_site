@@ -128,14 +128,17 @@ section .company{
 section .section>.textWrap{
 	position: absolute;
 	top: 30px; left: 50%; margin-left: -250px;
-	width: 500px;
+	width: 400px;
 	font-size: 70px;
 	text-align: center;
 	color:#fff;
 }
-section .section>.textWrap>p:first-child,
+section .section>.textWrap>p:first-child{
+}
 section .section>.textWrap>p>span{
+	display: block;
 	font-weight: bold;
+	color: white;
 }
 section .section>.textWrap>p:last-child{
 	padding-top: 15px;
