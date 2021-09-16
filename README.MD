@@ -3,7 +3,7 @@
 1. himedia https://yon9woo.github.io/2021_uiux_site/01_himedia
 1. 한국대학교 https://yon9woo.github.io/2021_uiux_site/02_college
 1. travel https://yon9woo.github.io/2021_uiux_site/03_air
-1. VICTOR https://yon9woo.github.io/2021_uiux_site/04_VICTOR COMPANY  
+1. VICTOR https://yon9woo.github.io/2021_uiux_site/04_VICTOR
 
 
 
