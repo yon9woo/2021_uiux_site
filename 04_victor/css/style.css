@@ -316,12 +316,7 @@ padding: 74px;
 .content2 .cont2List li>img{cursor: pointer;}
 
 
-.cont2List .cont2s1:after {
-  content: "";display: block;border-width: 30px;
-  position: absolute;right: 870px;top: calc(50% - 50px);
-  border-style: solid; 
-  border-color:transparent transparent transparent #C0C0C9;
-}
+
 
 .cont2s1 {padding: 80px;  color: #fff;}
 .cont2s1 img { margin-bottom: 22px;}
@@ -421,9 +416,9 @@ margin: 0 auto; }
 
 .sub_list li + li { margin-left: 10px;}
 
+.subCont h2 { text-align: center; font-size: 36px; font-weight: normal;
+   }
 
-.sub_company { width: 1240px; margin: 0 auto; bottom: 0;}
-.sub_company li { float: left; width: calc( 1240px / 3); background: #fff; }
 
 .sub_company li a { display: block; line-height: 70px;
   display: block;  color: #909090; text-align: center;
