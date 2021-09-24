@@ -421,22 +421,6 @@ margin: 0 auto; }
 
 .sub_list li + li { margin-left: 10px;}
 
-.subCont h2 { text-align: center; font-size: 36px; font-weight: normal;
-   }
-.subCont h2:before { display: block;
-  content: "";  background: #ffd600; height: 4px; width: 40px; margin: 34px auto;
-
-}
-.subCont {width: 1240px; margin: 0 auto;}
-.subCont > img { margin: 0 auto; display: block; width: 100%;}
-
-ul.tab li.active{ background:#FED600;}
-ul.tab li.active a {  color: #fff}
-
- .sub li::after{content: ""; display: block; width: 100%; height: 2px; background: #fed600;}
-
-
-
 
 .sub_company { width: 1240px; margin: 0 auto; bottom: 0;}
 .sub_company li { float: left; width: calc( 1240px / 3); background: #fff; }
