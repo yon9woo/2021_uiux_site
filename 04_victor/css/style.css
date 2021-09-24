@@ -61,13 +61,14 @@ font-weight: bold; color: #fff; margin-left: 40px;}
   background-size: cover; background-position: center;
   background-repeat: no-repeat;
   height: 870px;
-  
+  width: 100%;
 }
 .sliderM  li.st2 {
   background-image:url(../images/vtBanner1.png);
   background-size: cover; background-position: center;
   background-repeat: no-repeat;
   height: 870px;
+  width: 100%;
 }
 /* .sliderM  li.st3 {
   background-image:url(../images/vtBanner3.png);
@@ -315,6 +316,13 @@ padding: 74px;
 .content2 .cont2List li>img{cursor: pointer;}
 
 
+.cont2List .cont2s1:after {
+  content: "";display: block;border-width: 30px;
+  position: absolute;right: 870px;top: calc(50% - 50px);
+  border-style: solid; 
+  border-color:transparent transparent transparent #C0C0C9;
+}
+
 .cont2s1 {padding: 80px;  color: #fff;}
 .cont2s1 img { margin-bottom: 22px;}
 .cont2s1 h3{ font-size: 24px; font-weight: bold; margin-bottom: 42px; text-align: center;}
@@ -381,10 +389,9 @@ margin: 0 auto; }
 
 
 
-/* menu.html 메뉴 페이지!!!!!!!!!!!!!!!!!! */
 
 .contentTop {
-  background-image: url(../images/soundbgpt.png);
+  background-image: url();
   background-size:cover; background-position: center;
   background-repeat: no-repeat;
   width: 100%; _height: 330px;
@@ -429,7 +436,6 @@ ul.tab li.active a {  color: #fff}
  .sub li::after{content: ""; display: block; width: 100%; height: 2px; background: #fed600;}
 
 
-/* 뺵다방 페이지 */
 
 
 .sub_company { width: 1240px; margin: 0 auto; bottom: 0;}
@@ -441,12 +447,11 @@ ul.tab li.active a {  color: #fff}
 }
 
 .companyTop{
-  background-image: url(../images/companybgpt.png);
+  background-image: url();
   background-size:cover; background-position: center;
   background-repeat: no-repeat;
   width: 100%; _height: 330px;
 }
-/* 소식페이지 */
 
 
 .sub_news { width: 1240px; margin: 0 auto; bottom: 0;}
@@ -468,27 +473,22 @@ ul.tab li.active a {  color: #fff}
   color: #fff;
 }
 
-/* 커피클래스 */
-
 .classTop {
-  background-image: url(../images/classbgpt.png);
+  background-image: url();
   background-size:cover; background-position: center;
   background-repeat: no-repeat;
   width: 100%; _height: 330px;
 }
-
-/* 고객의소리 */
 
 .soundTop {
-  background-image: url(../images/companybgpt.png);
+  background-image: url();
   background-size:cover; background-position: center;
   background-repeat: no-repeat;
   width: 100%; _height: 330px;
 }
 
-/* 창업안내 */
 .openTop {
-  background-image: url(../images/newsbgpt.png);
+  background-image: url();
   background-size:cover; background-position: center;
   background-repeat: no-repeat;
   width: 100%; _height: 330px;
