@@ -70,8 +70,9 @@ display: flex; justify-content: center; align-items: center;}
         background-repeat: no-repeat;
         height: 640px;
         /* width: 100%; */
-      }.sliderM  li.st3 {
-        background-image:url(../images/vtBanner3_mo.png);
+      }
+      .sliderM  li.st3 {
+        background-image:url(../images/vtBanner2_mo.png);
         background-size:cover; background-position: center;
         background-repeat: no-repeat;
         height: 640px;

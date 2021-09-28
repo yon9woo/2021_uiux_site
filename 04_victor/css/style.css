@@ -335,6 +335,8 @@ padding: 74px;
 .content3 .cont3List li{ width: 620px;  height: 310px;float: left; margin-bottom: 80px; padding: 30px; }
 .content3 .cont3List .cont3sec1{
     background: #a5aeb9;
+    background-image: url(../images/vtConpition\ 1.png);
+    
 }
 .cont3List .cont3sec1 .cont3Txt h3 { color: #fff; font-weight: bold; font-size: 36px;}
 .cont3List .cont3sec1 .cont3Txt h3:after{content: ""; height: 2px; width: 38px; background: #fff; display: block; margin: 28px 0;}
@@ -342,7 +344,8 @@ padding: 74px;
 .cont3List .cont3sec1 .cont3Txt button { background: none; border: 2px solid #fff; width: 100px; height: 40px; font-weight: bold;}
 .cont3List .cont3sec1 .cont3Txt button a{display: block;color: #fff;}
 .content3 .cont3List .cont3sec2{
-    background: #222c41;
+    background: #222c41; 
+    background-image: url(../images/vtTeamvictor\ .png);
 }
 .cont3List .cont3sec2 .cont3Txt h3 { color: #fff; font-weight: bold; font-size: 36px;}
 .cont3List .cont3sec2 .cont3Txt h3:after{content: ""; height: 2px; width: 38px; background: #fff; display: block; margin: 28px 0;}
@@ -386,7 +389,6 @@ margin: 0 auto; }
 
 
 .contentTop {
-  background-image: url();
   background-size:cover; background-position: center;
   background-repeat: no-repeat;
   width: 100%; _height: 330px;
@@ -398,13 +400,6 @@ margin: 0 auto; }
 
 .contentTop_Txt p{ font-size: 20px; display: block;}
 
-.sub { width: 1240px; margin: 0 auto; bottom: 0;}
-.sub_menu li { float: left; width: calc( 1240px / 5); background: #fff; }
-
-.sub_menu li a { display: block; line-height: 70px;
-  display: block;  color: #909090; text-align: center;
-  font-size: 24px; font-weight: bold;
-}
 
 .menu_contWrap { padding: 50px 0;}
 .menu_contWrap .subCont { display: none;}
@@ -416,25 +411,8 @@ margin: 0 auto; }
 
 .sub_list li + li { margin-left: 10px;}
 
-.subCont h2 { text-align: center; font-size: 36px; font-weight: normal;
-   }
-
-
-.sub_company li a { display: block; line-height: 70px;
-  display: block;  color: #909090; text-align: center;
-  font-size: 24px; font-weight: bold;
-}
-
-.companyTop{
-  background-image: url();
-  background-size:cover; background-position: center;
-  background-repeat: no-repeat;
-  width: 100%; _height: 330px;
-}
-
-
-.sub_news { width: 1240px; margin: 0 auto; bottom: 0;}
-.sub_news li { float: left; width: calc( 1240px / 4); background: #fff; }
+.subCont {width: 1240px; margin: 0 auto;}
+.subCont > img { margin: 0 auto; display: block; width: 100%;}
 
 .sub_news li a { display: block; line-height: 70px;
   display: block;  color: #909090; text-align: center;
@@ -451,32 +429,3 @@ margin: 0 auto; }
   width: 100%; _height: 330px;
   color: #fff;
 }
-
-.classTop {
-  background-image: url();
-  background-size:cover; background-position: center;
-  background-repeat: no-repeat;
-  width: 100%; _height: 330px;
-}
-
-.soundTop {
-  background-image: url();
-  background-size:cover; background-position: center;
-  background-repeat: no-repeat;
-  width: 100%; _height: 330px;
-}
-
-.openTop {
-  background-image: url();
-  background-size:cover; background-position: center;
-  background-repeat: no-repeat;
-  width: 100%; _height: 330px;
-}
-.mb70{margin-bottom: 70px!important;}
-
-
-
-
-
-.menu_overlay { display: none; }
-.menu_overlay.rgba{display: block; opacity:1; background: rgba(0,0,0,0.5); z-index: 1; width: 100%; height: 100%; position: fixed; top: 0;}
