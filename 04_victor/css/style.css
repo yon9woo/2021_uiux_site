@@ -168,7 +168,7 @@ align-items: center; }
 }
 
 .content .contList .sec2V3{
-  background-image: url(../images/vtRaket.png);
+  background-image: url(../images/vtRaket\ .png);
   background-size:cover; background-position: center;
   background-repeat: no-repeat;
   padding: 40px;
@@ -325,17 +325,27 @@ padding: 74px;
 
 .cont2s1 p.day { float: left;}
 
-.cont2Txt { padding: 40px;}
-.cont2Txt h3 { font-weight: bold; font-size: 16px; margin-bottom: 24px;}
-.cont2Txt p {  font-size: 14px; margin-bottom: 94px;}
-.cont2Txt p:last-child{ font-size: 16px;}
+.cont2Txt_1 { padding: 40px;}
+.cont2Txt_1 h3 { font-weight: bold; font-size: 24px; margin-bottom: 24px;}
+.cont2Txt_1 p {font-size: 16px; margin-bottom: 94px; font-weight: lighter;}
+.content2 .cont2Txt_1:after{content:"";border-width:20px;border-style:solid;border-color:  transparent   #E7E7E7 transparent transparent ;position: absolute;top: 2800px;left: 912px;}
+
+.cont2Txt_2 { padding: 40px;}
+.cont2Txt_2 h3 { font-weight: bold; font-size: 24px; margin-bottom: 24px;}
+.cont2Txt_2 p {  font-size: 16px; margin-bottom: 94px; font-weight: lighter;}
+.content2 .cont2Txt_2:after{content:"";border-width:20px;border-style:solid;border-color: transparent transparent transparent #E7E7E7;position: absolute;top: 3110px;left: 952px;}
+
+.cont2Txt_3 { padding: 40px;}
+.cont2Txt_3 h3 { font-weight: bold; font-size: 24px; margin-bottom: 24px;}
+.cont2Txt_3 p {  font-size: 16px; margin-bottom: 94px; font-weight: lighter;}
+.content2 .cont2Txt_3:after{content:"";border-width:20px;border-style:solid;border-color:  transparent transparent  #E7E7E7 transparent ;position: absolute;top: 2950px;left: 1408px;}
+
 
 .content3 {  background: #fff;   }
 .cont3List {width: 1240px; margin: 0 auto;}
 .content3 .cont3List li{ width: 620px;  height: 310px;float: left; margin-bottom: 80px; padding: 30px; }
 .content3 .cont3List .cont3sec1{
-    background: #a5aeb9;
-    background-image: url(../images/vtConpition\ 1.png);
+    background: #6c8aad;
     
 }
 .cont3List .cont3sec1 .cont3Txt h3 { color: #fff; font-weight: bold; font-size: 36px;}
