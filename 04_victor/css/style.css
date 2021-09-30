@@ -328,17 +328,24 @@ padding: 74px;
 .cont2Txt_1 { padding: 40px;}
 .cont2Txt_1 h3 { font-weight: bold; font-size: 24px; margin-bottom: 24px;}
 .cont2Txt_1 p {font-size: 16px; margin-bottom: 94px; font-weight: lighter;}
-.content2 .cont2Txt_1:after{content:"";border-width:20px;border-style:solid;border-color:  transparent   #E7E7E7 transparent transparent ;position: absolute;top: 2800px;left: 912px;}
+.content2 .cont2Txt_1:after{content:"";border-width:20px;position: absolute; display: block;border-style:solid;border-color:  transparent   #E7E7E7 transparent transparent ;position: absolute;top: 2800px;left: 912px;}
 
 .cont2Txt_2 { padding: 40px;}
 .cont2Txt_2 h3 { font-weight: bold; font-size: 24px; margin-bottom: 24px;}
 .cont2Txt_2 p {  font-size: 16px; margin-bottom: 94px; font-weight: lighter;}
-.content2 .cont2Txt_2:after{content:"";border-width:20px;border-style:solid;border-color: transparent transparent transparent #E7E7E7;position: absolute;top: 3110px;left: 952px;}
+.content2 .cont2Txt_2:after{content:"";border-width:20px;position: absolute; display: block;border-style:solid;border-color: transparent transparent transparent #E7E7E7;position: absolute;top: 3110px;left: 952px;}
 
 .cont2Txt_3 { padding: 40px;}
 .cont2Txt_3 h3 { font-weight: bold; font-size: 24px; margin-bottom: 24px;}
 .cont2Txt_3 p {  font-size: 16px; margin-bottom: 94px; font-weight: lighter;}
-.content2 .cont2Txt_3:after{content:"";border-width:20px;border-style:solid;border-color:  transparent transparent  #E7E7E7 transparent ;position: absolute;top: 2950px;left: 1408px;}
+.content2 .cont2Txt_3:after{content:"";border-width:20px;position: absolute; display: block; border-style:solid;border-color:  transparent transparent  #E7E7E7 transparent ;position: absolute;top: 2950px;left: 1408px;}
+.sliderSc2 div.txt1Ts:after {
+  content: "";display: block;border-width: 30px;
+  position: absolute;right: 870px;top: calc(50% - 50px);
+  border-style: solid; 
+  border-color:transparent transparent transparent #C0C0C9;
+  
+}
 
 
 .content3 {  background: #fff;   }
@@ -432,7 +439,23 @@ margin: 0 auto; }
 .sub_class {display: none;}
 .sub_search, .sub_open {display: none;}
 
+
 .newsTop {
+  background-image: url(../images/racket-banner.jpg);
+  background-size:cover; background-position: center;
+  background-repeat: no-repeat;
+  width: 100%; _height: 330px;
+  color: #fff;
+}
+
+.productTop {
+  background-image: url(../images/rackets\ \(1\).png);
+  background-size:cover; background-position: center;
+  background-repeat: no-repeat;
+  width: 100%; _height: 330px;
+  color: #fff;
+}
+.teamVtTop {
   background-image: url(../images/racket-banner.jpg);
   background-size:cover; background-position: center;
   background-repeat: no-repeat;
