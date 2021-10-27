@@ -53,7 +53,8 @@ body{font-family: 'Nanum Gothic', sans-serif;}
   }
   .release .container h2.conts_title{font-weight: 800;}
   .container h2.conts_title{font-weight: 800;}
-.release .container h2.conts_title:after { content: ""; display: block; height: 2px; width: 206px; background: var(--primary-color-1); margin: 10px auto; }
+.release .container h2.conts_title:after { content: ""; display: block; height: 2px; width: 206px; background: var(--primary-color-1); margin: 10px 0; }
+.release .container h2.conts_title1:after { content: ""; display: block; height: 2px; width: 206px; background: var(--primary-color-1); margin: 10px auto; }
 .release .owl-item{ padding: 30px; _opacity: 0.4; transition: 0.3s;}
 .release .owl-item.center{transform: scale(1.2); opacity: 1; padding: 0;}
 .release .owl-item.center img {height: 100%; width: 100%;}
