@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>RETROBOWLING</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"> </script>
+	<script src="js/jquery.bxslider.js"> </script>
+	<script>
+		$(document).ready(function(){
+			$('.first-button').on('click', function () {
+   			$('.animated-icon1').toggleClass('open');
+  			});
+
+			$(window).scroll(function(){
+				scrollYPo();
+			});
+			function scrollYPo(){
+				var scrollY = $(window).scrollTop();
+				var winH = $("html").height()/2;
+				console.log(winH);
+
+				if(scrollY >= winH){
+					$(".top").addClass("view");
+				}else{
+					$(".top").removeClass("view");
+				}
+			}
+			$(".top").click(function(e){
+				e.preventDefault();
+				$("html,body").animate({scrollTop:0},1000);
+			});
+		});
+	</script>
+</head>
+<body>
+	<!-- header -->
+	<div class="bg_b">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark bg_b">
+			<a class="navbar-brand" href="index.html"><img src="images/dwg_logo.png" alt=""></a>
+			  	<button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+			    aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+			    <div class="animated-icon1"><span></span><span></span><span></span></div>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+			    <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+			      <li class="nav-item">
+			        <a class="nav-link" href="">About</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="">Teams</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="">Academy</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="">VOD</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="">Partners</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="">News</a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+		</div>
+	</div>
+	<!-- contents01 -->
+	<div class="bg_b1">
+		<div class="container">
+			<div class="header_wrap">
+			</div>
+		</div>
+	</div>
+	<div class="bg_y py-5">
+		<div class="container text-center">
+			<div class="row">
+				<div class="imenu ifac col-md-3">
+					<p class="px-5 px-md-0">DWG KIA RG 팀 새로운 서브 코치 합류...<br><date>2021-09-08</date></p>
+					<a href="facintro.html"><button type="button" class="btn btn-outline-success mb-5 mb-md-0">READ MORE</button></a>
+				</div>
+				<div class="imenu ifac col-md-3">
+					<p class="px-5 px-md-0">DWG KIA RG 팀 새로운 서브 코치 합류...<br><date>2021-09-08</date></p>
+					<a href="facintro.html"><button type="button" class="btn btn-outline-success mb-5 mb-md-0">READ MORE</button></a>
+				</div>
+				<div class="imenu iuse col-md-3">
+					<p class="px-5 px-md-0">DWG KIA PUBG 팀 로스터 업데이트(Silky)<br><date>2021-08-31</date></p>
+					<a href="guide.html"><button type="button" class="btn btn-outline-success mb-5 mb-md-0">READ MORE</button></a>
+				</div>
+				<div class="imenu ireview col-md-3">
+					<p class="px-5 px-md-0">2021 LCK SUMMER CHAMPIONS DWG<br><date>2021-08-28</date></p>
+					<a href="review.html"><button type="button" class="btn btn-outline-success mb-5 mb-md-0">READ MORE</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	
+	<!-- Event -->
+	<section class="bg_w py-5">
+		<div class="container text-center">
+			<div class="row">
+				<div class="event col-md-6">
+					<img src="images/" alt="" class="w-100">
+				</div>
+			</div>
+		</div>
+	</section> 
+	<!-- Video -->
+	<section class="bg_o py-5 d-none d-md-block">
+		<div class="container text-center">
+			<h1 class="txt_y">DWG VOD</h1>
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-10">
+					<div class="videobox">
+						<video autoplay muted loop>
+							<source src="images/LCK_SUMMER.mp4">
+						</video>
+					</div>
+
+				</div>
+				<div class="col-1"></div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
