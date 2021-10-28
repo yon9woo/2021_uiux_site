@@ -5,5 +5,6 @@
 1. travel https://yon9woo.github.io/2021_uiux_site/03_air
 1. VICTOR https://yon9woo.github.io/2021_uiux_site/04_victor
 1. YG https://yon9woo.github.io/2021_uiux_site/05_YG_ENT
+1. DWG https://yon9woo.github.io/2021_uiux_site/06_DWG
 
 
